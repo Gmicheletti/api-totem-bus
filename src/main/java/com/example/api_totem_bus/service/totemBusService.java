@@ -15,22 +15,6 @@ public class totemBusService {
         }
     }
 
-    // public String consultarMarcas() {
-    //     return consultarURL("https://parallelum.com.br/fipe/api/v1/carros/marcas");
-    // }
-
-    // public String consultarModelos(int id) {
-    //     return consultarURL("https://parallelum.com.br/fipe/api/v1/carros/marcas/" + id + "/modelos");
-    // }
-
-    // public String consultarAnos(int marca, int modelo) {
-    //     return consultarURL("https://parallelum.com.br/fipe/api/v1/carros/marcas/" + marca + "/modelos/" + modelo + "/anos");
-    // }
-
-    // public String consultarValor(int marca, int modelo, String ano) {
-    //     return consultarURL("https://parallelum.com.br/fipe/api/v1/carros/marcas/" + marca + "/modelos/" + modelo + "/anos/" + ano);
-    // }
-
     public String prevParada(int id){
         return consultarURL("http://mobile-l.sitbus.com.br:6060/siumobile-ws-v01/rest/ws/buscarPrevisoes/" + id + "/0/retornoJSON");
     }
